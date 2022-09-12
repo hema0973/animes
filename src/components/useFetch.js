@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const useFetch = (request) => {
      const[data , setData]= useState(null);
      const[pending , setPending]=useState(true);
-     const[error , setError]=useState(false);
+     const[error , setError]=useState(null);
 
     useEffect( ()=>{
         setTimeout(()=>{

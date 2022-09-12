@@ -2,6 +2,7 @@ import {BrowserRouter as Router , Route ,Switch} from 'react-router-dom'
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Wishlist from './components/Wishlist';
+
 function App()
 {
     return(
@@ -10,17 +11,15 @@ function App()
              <Nav/>
        <Switch>
            <Route exact path="/">
-           <Home/>
-        </Route>
-</Switch>
-<Route path="wishlist">
-    <Wishlist/>
-
-</Route>
-
-
-
-        </div>
+              <Home/>
+           </Route >
+      
+        
+          <Route path="/wishlist">
+             <Wishlist/>
+          </Route>
+       </Switch>
+            </div>
 
         </Router>
     );

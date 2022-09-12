@@ -5,7 +5,7 @@ import useFetch from "./useFetch";
 const Wishlist = () => {
 
         let {data: animes , error , pending } = useFetch("https://api.jikan.moe/v4/anime");
-        const [wish , setWish]=useState(null)
+        const [wish , setWish]=useState(null);
 
         useEffect(()=>{
             let wish = localStorage.getItem("wish");
